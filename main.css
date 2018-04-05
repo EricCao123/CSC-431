@@ -2,3 +2,6 @@
 body {
   background: #333;
 }
+select {
+  margin-left: 60 px;
+}
