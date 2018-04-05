@@ -3,3 +3,6 @@ body {
   background: #333;
 }
 
+select {
+  color: navy;
+}
