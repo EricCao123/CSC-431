@@ -8,4 +8,7 @@ table {
   margin-left: 650px;
   border: 1px solid black;
 }
+td{
+  margin-right: 50px;
+}
 
