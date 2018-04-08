@@ -2,9 +2,13 @@ body {
   background-color: #F0F080;
 }
 h1 {
-  margin-left: 150px;
+  margin-left: 450px;
+}
+select {
+  margin-left: 450px;
 }
 table {
+  margin-left: 450px;
   background-color: #fff;
 }
 
