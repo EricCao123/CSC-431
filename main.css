@@ -1,6 +1,9 @@
 body {
   background-color: #F0F080;
 }
+h1 {
+  margin-left: 150px;
+}
 table {
   background-color: #fff;
 }
