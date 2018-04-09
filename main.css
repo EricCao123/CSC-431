@@ -1,9 +1,11 @@
 h1 {
   margin-left: 550px;
 }
+
 select {
   margin-left: 650px;
 }
+
 table {
   margin-left: 650px;
   border: 1px solid black;
@@ -11,8 +13,10 @@ table {
   position: absolute;
   left: 0px;
   top: 0px;
-  display:none;
+  display: none;
+  width:70%;
 }
+
 td{
   margin-right: 50px;
   padding:10px;
