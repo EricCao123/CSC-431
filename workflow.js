@@ -1,3 +1,7 @@
 /*
 //  Initialize display
 */
+
+$(function(){
+
+});
