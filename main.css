@@ -25,6 +25,7 @@ td{
 }
 
 .centerContainer {
+  width: 70%;
   position: relative;
   margin: auto;
 }
