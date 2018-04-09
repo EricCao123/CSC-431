@@ -13,6 +13,7 @@ table {
   position: absolute;
   left: 10%;
   display: none;
+  width:30%;
 }
 
 tr:first-child {
