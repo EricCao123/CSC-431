@@ -9,9 +9,8 @@ select {
 table {
   border: 1px solid black;
   background-color: #fff;
-  position: absolute;
-  left: 0px;
-  top: 0px;
+  position: relative;
+  margin:auto;
   display: none;
   width: 70%;
 }
