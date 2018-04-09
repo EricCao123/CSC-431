@@ -16,10 +16,6 @@ table {
   width: 50%;
 }
 
-tr:first-child {
-  background-color: #ADD8E6;
-}
-
 td{
   padding: 10px;
 }
