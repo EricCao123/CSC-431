@@ -3,5 +3,5 @@
 */
 
 $(function(){
-
+  $('#pending').css('display','block');
 });
