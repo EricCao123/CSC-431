@@ -173,9 +173,8 @@ window.onclick = function(event) {
 
 $(function() {
     $("#loginForm").submit(function() {
-        alert($(this).serialize());
-        // No thanks I'm gonna use my own post request
-        // code here!
+        var data = $(this).serialize().split("&");
+        alert(data);
         return false;
     });
 });
