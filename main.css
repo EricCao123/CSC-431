@@ -2,6 +2,10 @@ h1 {
   margin-left: 550px;
 }
 
+.header {
+  text-align:right;
+}
+
 select {
   margin-left: 650px;
 }
