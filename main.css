@@ -31,7 +31,7 @@ tr:first-child {
 }
 
 tr:not(:first-child):hover {
-    color: yellow;
+    background-color: yellow;
 }
 
 
