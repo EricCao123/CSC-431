@@ -14,8 +14,8 @@ table {
   border: 1px solid black;
   background-color: #fff;
   color: #000;
-  position: absolute;
-  left: 20.621%;
+  position: relative;
+  margin: 0px auto;
   display: none;
   table-layout: fixed;
   width:fit-content;
