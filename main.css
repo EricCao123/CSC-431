@@ -1,8 +1,8 @@
 body {
   background-color: #F0F080;
 }
-a {
-  float:right;
+.header {
+  text-align:right;
 }
 
 table {
