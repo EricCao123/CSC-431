@@ -2,9 +2,7 @@ body {
   background-color: #F0F080;
 }
 a {
-  position: absolute;
-  top: 0 px;
-  right: 0 px;
+  float:right;
 }
 
 table {
