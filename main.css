@@ -2,7 +2,11 @@ h1 {
   margin-left: 550px;
 }
 
-.header {
+.login {
+  text-align:right;
+}
+
+.drop-down {
   text-align:right;
 }
 
