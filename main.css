@@ -7,7 +7,8 @@ h1 {
 }
 
 select {
-  margin-left: 650px;
+  position: relative;
+  margin: 0px auto;
 }
 
 table {
