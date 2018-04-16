@@ -30,6 +30,12 @@ tr:first-child {
   background-color:LightBlue;
 }
 
+tr:not(:first-child):hover {
+    color: yellow;
+}
+
+
+
 td{
   padding: 10px;
 }
