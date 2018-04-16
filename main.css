@@ -30,6 +30,10 @@ tr:first-child {
   background-color:LightBlue;
 }
 
+tr:not(:first-child) {
+    color: yellow;
+}
+
 td{
   padding: 10px;
 }
