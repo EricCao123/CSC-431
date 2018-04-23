@@ -10,7 +10,14 @@ window.onclick = function(event) {
 
 $(function() {
     $("#loginForm").submit(function() {
+        //
+    });
+});
+
+$(function() {
+    $("#registerForm").submit(function() {
         var data = $(this).serialize().split("&");
         $.post( "test.php", data );
     });
 });
+        
