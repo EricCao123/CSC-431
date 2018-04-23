@@ -17,7 +17,7 @@ $(function() {
         )
         .fail( 
             alert( "error" );
-        )
+        );
     });
 });
 
