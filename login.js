@@ -12,12 +12,12 @@ $(function() {
     $("#loginForm").submit(function() {
         var data = $(this).serialize().split("&");
         $.get( "ec2-18-220-98-102.us-east-2.compute.amazonaws.com/login.php", data , null )
-        .done(
+        .done(function() {
             alert( "success" );
-        )
-        .fail( 
+        })
+        .fail(function() {
             alert( "error" );
-        );
+        });
     });
 });
 
