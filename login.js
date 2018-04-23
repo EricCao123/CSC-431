@@ -24,8 +24,13 @@ $(function() {
 $(function() {
     $("#registerForm").submit(function() {
         var data = $(this).serialize().split("&");
-        $.post( "ec2-18-220-98-102.us-east-2.compute.amazonaws.com/register.php", data );
-        alert("Account Registered!");
+        $.post( "ec2-18-220-98-102.us-east-2.compute.amazonaws.com/register.php", data )
+        .done(function() {
+                alert( "success" );
+            })
+            .fail(function() {
+                alert( "error" );
+            });
     });
 });
         
