@@ -12,10 +12,10 @@ $(function() {
     $("#loginForm").submit(function() {
         var data = $(this).serialize().split("&");
         $.get( "ec2-18-220-98-102.us-east-2.compute.amazonaws.com/login.php", data , null )
-        .done(data
+        .done(
             alert( "success" );
         )
-        .fail(data 
+        .fail( 
             alert( "error" );
         )
     });
