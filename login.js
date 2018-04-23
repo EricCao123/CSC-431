@@ -11,7 +11,7 @@ window.onclick = function(event) {
 $(function() {
     $("#loginForm").submit(function() {
         var data = $(this).serialize().split("&");
-        $.get( "ec2-18-220-98-102.us-east-2.compute.amazonaws.com/login.php", data , null );
+        $.get( "ec2-18-220-98-102.us-east-2.compute.amazonaws.com/login.php", data , null )
         .done(data
             alert( "success" );
         )
