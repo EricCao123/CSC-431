@@ -11,7 +11,6 @@ window.onclick = function(event) {
 $(function() {
     $("#loginForm").submit(function() {
         var data = $(this).serialize().split("&");
-        alert(data);
-        return false;
+        $.post( "test.php", data );
     });
 });
