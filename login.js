@@ -11,15 +11,15 @@ window.onclick = function(event) {
 $(function() {
     $("#loginForm").submit(function() {
         var data = $(this).serialize().split("&");
-        $.post( "ec2-18-220-98-102.us-east-2.compute.amazonaws.com/login.php", data );
+        $.get( "ec2-18-220-98-102.us-east-2.compute.amazonaws.com/login.php", data , null );
+        alert("Data loaded: ");
     });
 });
 
 $(function() {
     $("#registerForm").submit(function() {
         var data = $(this).serialize().split("&");
-        $.post( "ec2-18-220-98-102.us-east-2.compute.amazonaws.com/register.php", data);
-        alert( "Account Registered!");
+        $.post( "ec2-18-220-98-102.us-east-2.compute.amazonaws.com/register.php", data );
     });
 });
         
