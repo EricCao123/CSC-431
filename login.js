@@ -25,7 +25,7 @@ $(function() {
     $("#registerForm").submit(function() {
         var data = $(this).serialize().split("&");
         $.post( "ec2-18-220-98-102.us-east-2.compute.amazonaws.com/register.php", data )
-        .done(function() {
+            .done(function() {
                 alert( "success" );
             })
             .fail(function() {
@@ -34,3 +34,9 @@ $(function() {
     });
 });
         
+function encrypt(data){
+    var account = new Object();
+    account.username = data[0];
+    account.password = data[1];
+    //be able to encrypt here, CryptoJS seems like a library to consider
+}
