@@ -21,13 +21,13 @@ $(function(){
       var counter = 0;
       $('#pending > tbody > tr').each(function(){
         $(this).find('td').each(function() {
+          alert($(this).text());
           if($(this).text() == choice){
-            counter ++;
             $(this).parent().css("background","blue");
           }
         });
       });
-      alert(counter);
+      //alert(counter);
     }
   );
 });
