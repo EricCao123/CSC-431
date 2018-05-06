@@ -29,8 +29,26 @@ $(function() {
 $(function() {
     $("#registerForm").submit(function() {
         var data = $(this).serialize().split("&");
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth()+1; //January is 0!
+        var yyyy = today.getFullYear();
+
+        if(dd<10) {
+           dd = '0'+dd
+        } 
+
+        if(mm<10) {
+            mm = '0'+mm
+        } 
+
+        today = mm + '/' + dd + '/' + yyyy;
         //encrypt(data);
         //Name, Email, Role, RegisterDate, Password
+        $('<input />').attr('type', 'hidden')
+            .attr('name', 'registerDate')
+            .attr('value', today)
+            .appendTo('#registerForm');
         $.post( "ec2-18-220-98-102.us-east-2.compute.amazonaws.com/register.php", data )
             .done(function() {
                 alert( "success" );
