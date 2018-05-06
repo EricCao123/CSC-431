@@ -15,9 +15,16 @@ $(function(){
       var choices = "";
       //for each selected value, read the selection and add them to the string choices
       $( "select option:selected" ).each(function() {
-        choices += $( this ).text() + " ";
+        choice += $( this ).text();
       });
-      alert(choices);
+      //inside of each tr, look for the flag listed, and do something
+      $('tr').each(function(){
+        $(this).find('td').each(function() {
+          if($(this).text() == choice){
+            
+          }
+        });
+      });
       //split choices up, if need be, and read the values, only displaying tr's that have a 'flag' of the choices listed.
     }
   );
