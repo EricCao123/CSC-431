@@ -23,6 +23,7 @@ $(function(){
         $(this).find('td').each(function() {
           var cell = $(this).text() + "";
           if(cell === choice){
+            alert("match found");
             $(this).closest('tr').css("background","blue");
           }
         });
