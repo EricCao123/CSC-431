@@ -21,8 +21,8 @@ $(function(){
       var counter = 0;
       $('#pending > tbody > tr').each(function(){
         $(this).find('td').each(function() {
-          var cell = $(this).text() + "";
-          $.trim(cell);
+          var cell = $(this).text();
+          cell = $.trim(cell);
           console.log(cell + choice);
           if(cell === choice){
             alert("match found");
