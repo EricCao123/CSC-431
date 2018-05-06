@@ -43,30 +43,34 @@
   
   <form id="registerForm" class="modal-content animate" action="//ec2-18-220-98-102.us-east-2.compute.amazonaws.com/register.php">
     <div class="imgcontainer">
+    <br>
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="img_avatar2.png" alt="Avatar" class="avatar">
     </div>
-
+	<br>
     <div class="container">
       <label for="name"><b>Name</b></label>
       <input type="text" placeholder="Enter name" name="name" required>
-      
+      <br>
       <label for="email"><b>Email</b></label>
       <input type="text" placeholder="Enter email" name="email" required>
-      
-      <label for="role"><b>Admin</b></label>
-      <input type="checkbox" name="role" required>
-
+      <br>
+      <select name="role">
+      <option value="user">User</option>
+      <option value="admin">Admin</option>
+      </select>
+	  <br>
       <label for="password"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="password" required>
-        
+      <br><br>
       <button type="submit">Register</button>
     </div>
-
+    <br>
     <div class="container" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
     </div>
-  </form>
+  </form> 
+  
 </div>  
 </body>
 </html>
