@@ -21,8 +21,8 @@ $(function(){
       var counter = 0;
       $('#pending > tbody > tr').each(function(){
         $(this).find('td').each(function() {
-          alert($(this).text());
-          if($(this).text() == choice){
+         
+          if($(this).text().equals(choice)){
             $(this).parent().css("background","blue");
           }
         });
