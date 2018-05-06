@@ -7,5 +7,10 @@ $(function(){
 });
 
 $(function(){
-  //onChange, check value and query or "show" values with a flag of check value.
+  //when .options changes, read the value.
+  $(".options").change(
+    function(){
+      alert($(this).text());
+    }
+  );
 });
