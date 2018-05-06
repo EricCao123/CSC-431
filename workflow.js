@@ -12,7 +12,7 @@ $(function(){
     //when .options changes
     function(){
       //run the function
-      var choices = "";
+      var choice = "";
       //for each selected value, read the selection and add them to the string choices
       $( "select option:selected" ).each(function() {
         choice += $( this ).text();
