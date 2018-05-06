@@ -23,6 +23,7 @@ $(function(){
         $(this).find('td').each(function() {
          
           if($(this).text() === choice){
+            alert("Found a choice!");
             $(this).closest('tr').css("background","blue");
           }
         });
