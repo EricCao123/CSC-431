@@ -47,10 +47,6 @@ $(function() {
         url = url + "&registerDate=" + today;
         //encrypt(data);
         //Name, Email, Role, RegisterDate, Password
-        $('<input />').attr('type', 'hidden')
-            .attr('name', 'registerDate')
-            .attr('value', today)
-            .appendTo('#registerForm');
         $.post( url, data )
             .done(function() {
                 alert( "success" );
