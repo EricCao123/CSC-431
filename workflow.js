@@ -22,7 +22,7 @@ $(function(){
       $('#pending > tbody > tr').each(function(){
         $(this).find('td').each(function() {
          
-          if($(this).text().equals(choice)){
+          if($(this).text() === choice){
             $(this).parent().css("background","blue");
           }
         });
