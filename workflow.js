@@ -15,15 +15,14 @@ $(function(){
       var choice = "";
       //for each selected value, read the selection and add them to the string choices
       $( "select option:selected" ).each(function() {
-        choice += $( this ).text();
+        choice = $( this ).text();
       });
       //inside of each tr, look for the flag listed, and do something
       var counter = 0;
       $('#pending > tbody > tr').each(function(){
         $(this).find('td').each(function() {
-         
           if($(this).text() === choice){
-            alert("Found a choice!");
+            alert(choice);
             $(this).closest('tr').css("background","blue");
           }
         });
