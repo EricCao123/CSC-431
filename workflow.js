@@ -22,6 +22,7 @@ $(function(){
       $('#pending > tbody > tr').each(function(){
         $(this).find('td').each(function() {
           var cell = $(this).text() + "";
+          alert(cell + choice);
           if(cell === choice){
             alert("match found");
             $(this).closest('tr').css("background","blue");
