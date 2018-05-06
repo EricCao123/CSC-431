@@ -21,11 +21,10 @@ $(function(){
       $('tr').each(function(){
         $(this).find('td').each(function() {
           if($(this).text() == choice){
-            
+            $(this).closest().css("background","blue");
           }
         });
       });
-      //split choices up, if need be, and read the values, only displaying tr's that have a 'flag' of the choices listed.
     }
   );
 });
