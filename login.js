@@ -29,6 +29,7 @@ $(function() {
 $(function() {
     $("#registerForm").submit(function() {
         var data = $(this).serialize().split("&");
+        var url = "ec2-18-220-98-102.us-east-2.compute.amazonaws.com/register.php";
         var today = new Date();
         var dd = today.getDate();
         var mm = today.getMonth()+1; //January is 0!
@@ -43,13 +44,14 @@ $(function() {
         } 
 
         today = mm + '/' + dd + '/' + yyyy;
+        url = url + "&registerDate=" + today;
         //encrypt(data);
         //Name, Email, Role, RegisterDate, Password
         $('<input />').attr('type', 'hidden')
             .attr('name', 'registerDate')
             .attr('value', today)
             .appendTo('#registerForm');
-        $.post( "ec2-18-220-98-102.us-east-2.compute.amazonaws.com/register.php", data )
+        $.post( url, data )
             .done(function() {
                 alert( "success" );
             })
