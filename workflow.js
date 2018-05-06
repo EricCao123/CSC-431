@@ -17,6 +17,7 @@ $(function(){
       $( "select option:selected" ).each(function() {
         choices += $( this ).text() + " ";
       });
+      alert(choices);
       //split choices up, if need be, and read the values, only displaying tr's that have a 'flag' of the choices listed.
     }
   );
