@@ -15,7 +15,7 @@ $(function() {
         var account = new Object();
         account.username = data[0];
         account.password = data[1];
-        //
+        //Email, Password
         $.get( "ec2-18-220-98-102.us-east-2.compute.amazonaws.com/login.php", data , null )
             .done(function() {
                 alert( "success" );
@@ -30,6 +30,7 @@ $(function() {
     $("#registerForm").submit(function() {
         var data = $(this).serialize().split("&");
         //encrypt(data);
+        //Name, Email, Role, RegisterDate, Password
         $.post( "ec2-18-220-98-102.us-east-2.compute.amazonaws.com/register.php", data )
             .done(function() {
                 alert( "success" );
