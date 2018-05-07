@@ -6,13 +6,15 @@ $(function(){
   $('#pending').css('display','block');
 });
 
+
+/*
+// When the options dropdown changes, read the selection that was given and make that the choice.
+// Then, scrub inside each tr element and look within each td provided to find the cell that matches the choice
+*/
 $(function(){
   $(".options").change(
-    //when .options changes
     function(){
-      //run the function
       var choice = "";
-      //for each selected value, read the selection and add them to the string choices
       $( "select option:selected" ).each(function() {
         choice = $( this ).text();
       });
@@ -33,6 +35,8 @@ $(function(){
 
 $(function(){
   $('input').click(function(){
+    var check = $(this).val();
     $(this).closest('td').addClass('hideElement');
+    $(this).closest('tr').children('.flag').text(check);
   });
 });
