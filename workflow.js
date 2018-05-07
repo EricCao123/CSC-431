@@ -23,7 +23,6 @@ $(function(){
         $(this).find('td').each(function() {
           var cell = $(this).text();
           cell = $.trim(cell);
-          console.log(cell + choice);
           if(cell === choice){
             $(this).closest('tr').css("background","blue");
           }
