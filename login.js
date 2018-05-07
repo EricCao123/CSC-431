@@ -42,7 +42,7 @@ $(function() {
         today = mm + '-' + dd + '-' + yyyy;
         var temp2 = "&registerDate=";
         temp = temp.concat(temp2);
-        var url = temp.concat(today);
+        var data = temp.concat(today);
         alert(url);
         //encrypt(data);
         //Name, Email, Role, RegisterDate, Password
