@@ -7,7 +7,6 @@ $(function(){
 });
 
 $(function(){
-  
   $(".options").change(
     //when .options changes
     function(){
@@ -30,4 +29,10 @@ $(function(){
       });
     }
   );
+});
+
+$(function(){
+  $('input').click(function(){
+    $(this).closest('td').addClass('hideElement');
+  });
 });
