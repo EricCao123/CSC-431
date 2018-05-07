@@ -12,7 +12,7 @@ $(function() {
     $("#loginForm").submit(function() {
         var data = $(this).serialize().split("&");
         //Email, Password
-        $.get( "ec2-18-220-98-102.us-east-2.compute.amazonaws.com/login.php", data , null )
+        $.get( "http://ec2-18-220-98-102.us-east-2.compute.amazonaws.com/login.php", data , null )
             .done(function() {
                 alert( "success" );
             })
