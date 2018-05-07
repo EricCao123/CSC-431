@@ -40,7 +40,7 @@ $(function() {
         } 
 
         today = mm + '/' + dd + '/' + yyyy;
-        
+        url = url + "&registerDate=" + today;
         //encrypt(data);
         //Name, Email, Role, RegisterDate, Password
         $.post( url, data )
