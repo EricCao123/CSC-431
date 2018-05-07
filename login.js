@@ -25,7 +25,7 @@ $(function() {
 $(function() {
     $("#registerForm").submit(function() {
         var data = $(this).serialize().split("&");
-        var temp = "ec2-18-220-98-102.us-east-2.compute.amazonaws.com/register.php";
+        var url = "http://ec2-18-220-98-102.us-east-2.compute.amazonaws.com/register.php";
         var today = new Date();
         var dd = today.getDate();
         var mm = today.getMonth()+1; //January is 0!
@@ -40,9 +40,7 @@ $(function() {
         } 
 
         today = mm + '-' + dd + '-' + yyyy;
-        var temp2 = "&registerDate=";
-        temp = temp.concat(temp2);
-        var data = temp.concat(today);
+        url = url + "&registerDate=" + today;
         alert(url);
         //encrypt(data);
         //Name, Email, Role, RegisterDate, Password
