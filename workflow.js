@@ -25,8 +25,10 @@ $(function(){
           cell = $.trim(cell);
           console.log(cell + choice);
           if(cell === choice){
-            alert("match found");
             $(this).closest('tr').css("background","blue");
+          }
+          else{
+            $(this).closest('tr').css("background","none");
           }
         });
       });
