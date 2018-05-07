@@ -7,8 +7,13 @@ INSTRUCTIONS:
   Go to the link above to view the live test page. The log in and registering functionality can be accessed on the right. Select an option in the drop down to highlight the elements of the table that correspond to that flag.
 
 index.html: main table
+
 login.css: Style sheet for log in
+
 login.html: log in
+
 login.js: JavaScript for log in
+
 main.css: Style sheet for index
+
 workflow.js: JavaScript for the table
