@@ -13,12 +13,7 @@ $(function() {
         var data = $(this).serialize().split("&");
         //Email, Password
         $.get( "http://ec2-18-220-98-102.us-east-2.compute.amazonaws.com/login.php", data , null )
-            .done(function() {
-                alert( "success" );
-            })
-            .fail(function() {
-                alert( "error" );
-            });
+            );
     });
 });
 
@@ -41,16 +36,10 @@ $(function() {
 
         today = mm + '-' + dd + '-' + yyyy;
         url = url + "&registerDate=" + today;
-        alert(url);
         //encrypt(data);
         //Name, Email, Role, RegisterDate, Password
         $.post( url, data )
-            .done(function() {
-                alert( "success" );
-            })
-            .fail(function() {
-                alert( "error" );
-            });
+            );
     });
 });
         
