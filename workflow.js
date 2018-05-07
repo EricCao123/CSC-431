@@ -18,7 +18,7 @@ $(function(){
         choice = $( this ).text();
       });
       //inside of each tr, look for the flag listed, and do something
-      $('table tr').not(':first').css("background":"white");
+      $('table tr').not(':first').css("background","white");
       $('#pending > tbody > tr').each(function(){
         $(this).find('td').each(function() {
           var cell = $(this).text();
