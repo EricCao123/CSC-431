@@ -26,9 +26,6 @@ $(function(){
           if(cell === choice){
             $(this).closest('tr').css("background","blue");
           }
-          else{
-            $(this).closest('tr').css("background","none");
-          }
         });
       });
     }
