@@ -24,7 +24,7 @@ $(function(){
           var cell = $(this).text();
           cell = $.trim(cell);
           if(cell === choice){
-            $(this).closest('tr').css("background","blue");
+            $(this).closest('tr').css("background","beige");
           }
         });
       });
