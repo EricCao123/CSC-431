@@ -10,6 +10,10 @@ h1 {
   text-align:right;
 }
 
+.hideElement {
+  display:none;
+}
+
 select {
   position: relative;
   margin: 0px auto;
